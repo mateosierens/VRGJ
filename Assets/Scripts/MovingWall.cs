@@ -37,7 +37,8 @@ public class MovingWall : MonoBehaviour
         if (wallPrefab != null)
         {
             // Instantiate a new wall at the start position.
-            Instantiate(wallPrefab, startPosition, Quaternion.identity);
+            var newWall = Instantiate(wallPrefab, startPosition, Quaternion.identity);
+            newWall.name = "Wall";
         }
         else
         {
