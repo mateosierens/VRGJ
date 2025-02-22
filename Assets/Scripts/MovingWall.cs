@@ -1,27 +1,31 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MovingWall : MonoBehaviour
 {
-    // Make sure to assign this prefab in the Inspector.
-    // It should be the same prefab that has this script attached.
-    public GameObject wallPrefab; 
     public float speed = 2f;
     public float distance = 10f; // Distance to travel before destroying
 
     private Vector3 startPosition;
+    private GameObject[] wallPrefabs;
 
     void Start()
     {
         startPosition = transform.position;
-        if (wallPrefab == null)
+
+        // Load all prefabs from the "Prefabs/Walls" folder and cast them to GameObject[]
+        wallPrefabs = Resources.LoadAll<GameObject>("Prefabs/Walls");
+
+        if (wallPrefabs == null || wallPrefabs.Length == 0)
         {
-            Debug.LogError("Wall Prefab is not assigned in the Inspector!");
+            Debug.LogError("No wall prefabs found in Resources/Prefabs/Walls.");
         }
     }
 
     void Update()
     {
-        // Move the wall in one direction (right along the X-axis)
+        // Move the wall forward along the Z-axis
         transform.position += -Vector3.forward * speed * Time.deltaTime;
 
         // When the wall has moved the specified distance...
@@ -34,15 +38,17 @@ public class MovingWall : MonoBehaviour
 
     void SpawnNewWall()
     {
-        if (wallPrefab != null)
+        if (wallPrefabs != null && wallPrefabs.Length > 0)
         {
+            // Select a random prefab
+            GameObject selectedPrefab = wallPrefabs[Random.Range(0, wallPrefabs.Length)];
+
             // Instantiate a new wall at the start position.
-            var newWall = Instantiate(wallPrefab, startPosition, Quaternion.identity);
-            newWall.name = "Wall";
+            Instantiate(selectedPrefab, startPosition, Quaternion.identity);
         }
         else
         {
-            Debug.LogError("Cannot spawn new wall because wallPrefab is not assigned.");
+            Debug.LogError("Cannot spawn new wall because wallPrefabs array is empty.");
         }
     }
 }
