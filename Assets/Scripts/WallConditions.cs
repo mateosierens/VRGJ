@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,11 +7,11 @@ using UnityEngine.Events;
 public class WallConditions : MonoBehaviour
 {
     public UnityEvent wallPassedEvent;
-    private readonly Dictionary<CollisionZone, bool> _conditions = new()
+    private readonly Dictionary<string, bool> _conditions = new()
     {
-        { CollisionZone.head, false },
-        { CollisionZone.leftHand, false },
-        { CollisionZone.rightHand, false }
+        { "head", false },
+        { "leftHand", false },
+        { "rightHand", false }
     };
 
     private void CheckConditions()
@@ -23,7 +22,22 @@ public class WallConditions : MonoBehaviour
         }
     }
 
-    public async Task OnEvent(CollisionZone e)
+    private async Task OnHeadEvent()
+    {
+        await OnEvent("head");
+    }
+
+    private async Task OnLeftHandEvent()
+    {
+        await OnEvent("leftHand");
+    }
+
+    private async Task OnRightHandEvent()
+    {
+        await OnEvent("rightHand");
+    }
+
+    private async Task OnEvent(string e)
     {
         _conditions[e] = true;
         CheckConditions();
