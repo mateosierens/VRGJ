@@ -7,7 +7,6 @@ using UnityEngine.Events;
 
 public class Dectector : MonoBehaviour
 {
-    public Collider collider;
     public List<Material> materials;
     private int counter;
     public CollisionZone assignedController;
