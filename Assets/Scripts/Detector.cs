@@ -1,11 +1,8 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class Dectector : MonoBehaviour
+public class Detector : MonoBehaviour
 {
     public List<Material> materials;
     private int counter;
@@ -28,7 +25,7 @@ public class Dectector : MonoBehaviour
     {
         Debug.Log("Triggered");
         Debug.Log(assignedController.ToString() + ", " + other.tag);
-        if(assignedController.ToString() == other.tag) NextColour();
+        if(other.CompareTag(assignedController.ToString())) NextColour();
     }
     
 
