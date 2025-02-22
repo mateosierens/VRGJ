@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WallSpawner : MonoBehaviour
 {
+    public event Action OnSuccesfullHit;
+    
     // Start is called before the first frame update
     void Start()
     {
