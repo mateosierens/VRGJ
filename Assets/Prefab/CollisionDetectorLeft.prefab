@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1069853419442481672, guid: 1f3e8846cd6d9e64d9a234bcd15aae7b, type: 3}
       propertyPath: assignedController
-      value: LeftHand
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2101031831535021582, guid: 1f3e8846cd6d9e64d9a234bcd15aae7b, type: 3}
       propertyPath: m_Materials.Array.data[0]
