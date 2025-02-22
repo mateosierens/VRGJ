@@ -22,7 +22,7 @@ public class MovingWall : MonoBehaviour
     void Update()
     {
         // Move the wall in one direction (right along the X-axis)
-        transform.position += Vector3.right * speed * Time.deltaTime;
+        transform.position += -Vector3.forward * speed * Time.deltaTime;
 
         // When the wall has moved the specified distance...
         if (Vector3.Distance(startPosition, transform.position) >= distance)
