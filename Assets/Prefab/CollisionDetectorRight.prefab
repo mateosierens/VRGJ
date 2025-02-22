@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: da0baf22fe2f1fc4bb2adf8144e31cfc, type: 2}
     - target: {fileID: 5881551139269972757, guid: ea9868c507534eb4ba04b0d9f5a4b35d, type: 3}
       propertyPath: assignedController
-      value: RightHand
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7657373805070618042, guid: ea9868c507534eb4ba04b0d9f5a4b35d, type: 3}
       propertyPath: m_Name
