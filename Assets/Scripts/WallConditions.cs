@@ -22,7 +22,7 @@ public class WallConditions : MonoBehaviour
         }
     }
 
-    private async Task OnEvent(CollisionZone e)
+    public async Task OnTargetCollision(CollisionZone e)
     {
         _conditions[e] = true;
         CheckConditions();
