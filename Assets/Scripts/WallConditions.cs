@@ -7,11 +7,11 @@ using UnityEngine.Events;
 public class WallConditions : MonoBehaviour
 {
     public UnityEvent wallPassedEvent;
-    private readonly Dictionary<string, bool> _conditions = new()
+    private readonly Dictionary<CollisionZone, bool> _conditions = new()
     {
-        { "head", false },
-        { "leftHand", false },
-        { "rightHand", false }
+        { CollisionZone.head, false },
+        { CollisionZone.leftHand, false },
+        { CollisionZone.rightHand, false }
     };
 
     private void CheckConditions()
@@ -22,22 +22,7 @@ public class WallConditions : MonoBehaviour
         }
     }
 
-    private async Task OnHeadEvent()
-    {
-        await OnEvent("head");
-    }
-
-    private async Task OnLeftHandEvent()
-    {
-        await OnEvent("leftHand");
-    }
-
-    private async Task OnRightHandEvent()
-    {
-        await OnEvent("rightHand");
-    }
-
-    private async Task OnEvent(string e)
+    public async Task OnTargetCollision(CollisionZone e)
     {
         _conditions[e] = true;
         CheckConditions();
