@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PiepScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Sien1.unity
     guid: 233201a128f0c744ca0476ff53e6a1f7
   - enabled: 0
     path: Assets/Scenes/Main VR Scene.unity
     guid: 715094974def0aa4982b93f91fd0e957
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TimScene.unity
     guid: 3a17659a39bd60d489ed9d00bad61a72
   m_configObjects:
