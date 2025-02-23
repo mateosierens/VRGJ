@@ -846,8 +846,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 1
   failCounter: 0
-  cooldownReducionAmount: 1
-  rampUpTreshHold: 3
+  cooldownReducionAmount: 0.33
+  rampUpTreshHold: 1
+  minSpawnCooldown: 0.5
 --- !u!4 &257274615
 Transform:
   m_ObjectHideFlags: 0
@@ -3089,6 +3090,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 477292179}
     m_Modifications:
+    - target: {fileID: 94340714048071768, guid: 8d2bbcc1e892e6e459dfddd7ee79828b, type: 3}
+      propertyPath: livesField
+      value: 
+      objectReference: {fileID: 950455589}
     - target: {fileID: 94340714048071768, guid: 8d2bbcc1e892e6e459dfddd7ee79828b, type: 3}
       propertyPath: scoreField
       value: 

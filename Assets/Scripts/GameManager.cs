@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public int failCounter = 0;
     public float cooldownReducionAmount = 1f;
     public int rampUpTreshHold = 3;
+    public float minSpawnCooldown = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour
         if (success)
         {
             successCounter++;
-            if ((successCounter % rampUpTreshHold == 0) && wallSpawner.spawnCooldown > 1f) wallSpawner.spawnCooldown -= cooldownReducionAmount;
+            if ((successCounter % rampUpTreshHold == 0) && wallSpawner.spawnCooldown > minSpawnCooldown) wallSpawner.spawnCooldown -= cooldownReducionAmount;
             
         }
         else
