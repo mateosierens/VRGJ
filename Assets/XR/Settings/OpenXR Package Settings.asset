@@ -848,26 +848,6 @@ MonoBehaviour:
   extensionStrings:
   - XR_KHR_binding_modification
   - XR_EXT_dpad_binding
---- !u!114 &-7177729722331164614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1477dbc8916dff4f8e21fc343efcd46, type: 3}
-  m_Name: ViveHandInteractionExt Android
-  m_EditorClassIdentifier: 
-  m_enabled: 0
-  nameUi: VIVE XR Hand Interaction Ext (Deprecated)
-  version: 1.0.0
-  featureIdInternal: vive.openxr.feature.hand.interaction.ext
-  openxrExtensionStrings: XR_EXT_hand_interaction
-  company: HTC
-  priority: 0
-  required: 0
 --- !u!114 &-7363377833381190461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,6 +911,26 @@ MonoBehaviour:
   m_XrInstance: 0
   m_XrSession: 0
   m_systemid: 0
+--- !u!114 &-7177729722331164614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1477dbc8916dff4f8e21fc343efcd46, type: 3}
+  m_Name: ViveHandInteractionExt Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: VIVE XR Hand Interaction Ext (Deprecated)
+  version: 1.0.0
+  featureIdInternal: vive.openxr.feature.hand.interaction.ext
+  openxrExtensionStrings: XR_EXT_hand_interaction
+  company: HTC
+  priority: 0
+  required: 0
 --- !u!114 &-7139387646777608694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3893,26 +3893,6 @@ MonoBehaviour:
   priority: 0
   required: 0
   enableAutoFallback: 0
---- !u!114 &-790555967094983690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17b6a897c202288439905d3efb0e006f, type: 3}
-  m_Name: ViveFoveation Android
-  m_EditorClassIdentifier: 
-  m_enabled: 0
-  nameUi: VIVE XR Foveation
-  version: 1.0.0
-  featureIdInternal: vive.openxr.feature.foveation
-  openxrExtensionStrings: XR_HTC_foveation
-  company: HTC
-  priority: 0
-  required: 0
 --- !u!114 &-824826041100743086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3930,6 +3910,26 @@ MonoBehaviour:
   version: 0.1
   featureIdInternal: vive.openxr.feature.enterprise.command
   openxrExtensionStrings: XR_HTC_enterprise_command
+  company: HTC
+  priority: 0
+  required: 0
+--- !u!114 &-790555967094983690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b6a897c202288439905d3efb0e006f, type: 3}
+  m_Name: ViveFoveation Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: VIVE XR Foveation
+  version: 1.0.0
+  featureIdInternal: vive.openxr.feature.foveation
+  openxrExtensionStrings: XR_HTC_foveation
   company: HTC
   priority: 0
   required: 0
@@ -4202,26 +4202,6 @@ MonoBehaviour:
   required: 0
   cacheSize: 1048576
   perThreadCacheSize: 51200
---- !u!114 &-349189846427398392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c6529da49ed6c34e9fc93a1ccfd9d4f, type: 3}
-  m_Name: ViveDisplayRefreshRate Android
-  m_EditorClassIdentifier: 
-  m_enabled: 0
-  nameUi: VIVE XR Display Refresh Rate
-  version: 1.0.0
-  featureIdInternal: vive.openxr.feature.displayrefreshrate
-  openxrExtensionStrings: XR_FB_display_refresh_rate
-  company: HTC
-  priority: 0
-  required: 0
 --- !u!114 &-362001760578876623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4242,6 +4222,26 @@ MonoBehaviour:
   company: HTC
   priority: 0
   required: 0
+--- !u!114 &-349189846427398392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c6529da49ed6c34e9fc93a1ccfd9d4f, type: 3}
+  m_Name: ViveDisplayRefreshRate Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: VIVE XR Display Refresh Rate
+  version: 1.0.0
+  featureIdInternal: vive.openxr.feature.displayrefreshrate
+  openxrExtensionStrings: XR_FB_display_refresh_rate
+  company: HTC
+  priority: 0
+  required: 0
 --- !u!114 &-320764158489648343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4255,22 +4255,6 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: 6892648284272877002}
-  - {fileID: -3543443810516684938}
-  - {fileID: -265348674239740507}
-  - {fileID: 1566641461131803335}
-  - {fileID: 6709526460485621552}
-  - {fileID: 6452102511841630281}
-  - {fileID: -7185746699897376427}
-  - {fileID: 1200721889051178525}
-  - {fileID: 6992379590586346417}
-  - {fileID: -7415781469433144278}
-  - {fileID: -7292854455531190231}
-  - {fileID: 7592264593814117366}
-  - {fileID: -4760311000451339917}
-  - {fileID: -362001760578876623}
-  - {fileID: -1220662631757440146}
-  - {fileID: 3496528970297774008}
   - {fileID: 5791847364151815082}
   - {fileID: -3129199460762493448}
   - {fileID: -6405069780096470030}
@@ -5290,7 +5274,7 @@ MonoBehaviour:
   priority: 0
   required: 0
   m_SynchronizationMode: 1
---- !u!114 &2172033826424038062
+--- !u!114 &2027779702970471531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5310,7 +5294,7 @@ MonoBehaviour:
   company: HTC
   priority: 0
   required: 0
---- !u!114 &2027779702970471531
+--- !u!114 &2172033826424038062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5363,33 +5347,6 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: 
   features:
-  - {fileID: 6106080668062572892}
-  - {fileID: -6754500928579025387}
-  - {fileID: -1583652168021596829}
-  - {fileID: -7363377833381190461}
-  - {fileID: 5629065178815079054}
-  - {fileID: -2746771906258828118}
-  - {fileID: 8691489865616258735}
-  - {fileID: 2890156857287761746}
-  - {fileID: -2791141512782646058}
-  - {fileID: -5995357259459400230}
-  - {fileID: 176137520311581728}
-  - {fileID: -3346327538752274168}
-  - {fileID: -5953251627613913487}
-  - {fileID: -937998389297748108}
-  - {fileID: -411851340097011525}
-  - {fileID: 3759020086563234489}
-  - {fileID: -7715082537374052925}
-  - {fileID: 7853358101883701497}
-  - {fileID: 3416304551892313365}
-  - {fileID: 9160924340030151829}
-  - {fileID: -8679850014810743801}
-  - {fileID: 2027779702970471531}
-  - {fileID: 8926255255034435259}
-  - {fileID: -5114000516994477082}
-  - {fileID: -3525792137376820834}
-  - {fileID: -824826041100743086}
-  - {fileID: 7006080267238170788}
   - {fileID: -1446625770321721806}
   - {fileID: -7397803183384801388}
   - {fileID: 3553051809463052257}
@@ -6069,26 +6026,6 @@ MonoBehaviour:
   company: HTC
   priority: 0
   required: 0
---- !u!114 &3781434728082802932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec826264ff4d75d4081f2ca472a3e083, type: 3}
-  m_Name: ViveCompositionLayerEquirect Android
-  m_EditorClassIdentifier: 
-  m_enabled: 0
-  nameUi: VIVE XR Composition Layer (Equirect)
-  version: 1.0.0
-  featureIdInternal: vive.openxr.feature.compositionlayer.equirect
-  openxrExtensionStrings: XR_KHR_composition_layer_equirect XR_KHR_composition_layer_equirect2
-  company: HTC
-  priority: 0
-  required: 0
 --- !u!114 &3759020086563234489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6106,6 +6043,26 @@ MonoBehaviour:
   version: 1.0.0
   featureIdInternal: vive.openxr.feature.firstpersonobserver
   openxrExtensionStrings: XR_MSFT_first_person_observer
+  company: HTC
+  priority: 0
+  required: 0
+--- !u!114 &3781434728082802932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec826264ff4d75d4081f2ca472a3e083, type: 3}
+  m_Name: ViveCompositionLayerEquirect Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: VIVE XR Composition Layer (Equirect)
+  version: 1.0.0
+  featureIdInternal: vive.openxr.feature.compositionlayer.equirect
+  openxrExtensionStrings: XR_KHR_composition_layer_equirect XR_KHR_composition_layer_equirect2
   company: HTC
   priority: 0
   required: 0
@@ -7630,26 +7587,6 @@ MonoBehaviour:
   company: HTC
   priority: 0
   required: 0
---- !u!114 &7018738455825999555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c983a6e70e9b04885eb94528d82f46, type: 3}
-  m_Name: ViveXRTracker Standalone
-  m_EditorClassIdentifier: 
-  m_enabled: 0
-  nameUi: VIVE XR Tracker (Beta)
-  version: 1.0.6
-  featureIdInternal: vive.openxr.feature.xrtracker
-  openxrExtensionStrings: XR_HTC_vive_xr_tracker_interaction
-  company: HTC
-  priority: 0
-  required: 0
 --- !u!114 &6992379590586346417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7695,6 +7632,26 @@ MonoBehaviour:
   priority: 0
   required: 0
   enablePersistedAnchor: 1
+--- !u!114 &7018738455825999555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c983a6e70e9b04885eb94528d82f46, type: 3}
+  m_Name: ViveXRTracker Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: VIVE XR Tracker (Beta)
+  version: 1.0.6
+  featureIdInternal: vive.openxr.feature.xrtracker
+  openxrExtensionStrings: XR_HTC_vive_xr_tracker_interaction
+  company: HTC
+  priority: 0
+  required: 0
 --- !u!114 &7024772377293812465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8218,6 +8175,26 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &7853358101883701497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eca1674b64bae840af3a53d3ae576ec, type: 3}
+  m_Name: ViveEyeTracker Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: VIVE XR Eye Tracker (Beta)
+  version: 1.0.0
+  featureIdInternal: vive.openxr.feature.eye.tracker
+  openxrExtensionStrings: XR_HTC_eye_tracker
+  company: HTC
+  priority: 0
+  required: 0
 --- !u!114 &7855563656068277431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8242,26 +8219,6 @@ MonoBehaviour:
   m_ViveWristTracker: 0
   m_ViveXRTracker: 0
   m_KHRHandInteraction: 0
---- !u!114 &7853358101883701497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eca1674b64bae840af3a53d3ae576ec, type: 3}
-  m_Name: ViveEyeTracker Android
-  m_EditorClassIdentifier: 
-  m_enabled: 0
-  nameUi: VIVE XR Eye Tracker (Beta)
-  version: 1.0.0
-  featureIdInternal: vive.openxr.feature.eye.tracker
-  openxrExtensionStrings: XR_HTC_eye_tracker
-  company: HTC
-  priority: 0
-  required: 0
 --- !u!114 &7875836978481107645
 MonoBehaviour:
   m_ObjectHideFlags: 0
