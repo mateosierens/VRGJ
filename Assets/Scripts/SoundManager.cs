@@ -7,7 +7,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public AudioSource player;
-    
+    public AudioSource BackgroundPlayer;
     public static SoundManager Instance { get; private set; }
 
     private void Awake()
@@ -28,6 +28,10 @@ public class SoundManager : MonoBehaviour
         player.Play();
     }
     
+    public void playBackgroundSound(){
+        if(BackgroundPlayer.clip) BackgroundPlayer.Play();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
