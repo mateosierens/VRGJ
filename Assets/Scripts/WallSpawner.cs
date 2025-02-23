@@ -74,7 +74,7 @@ public class WallSpawner : MonoBehaviour
         conditions.onWallFailed += onFailedWallClear;
         conditions.playerPos = playerPos;
         var baseComponent = spawnedWall.GetComponent<WallBase>();
-        baseComponent.onPassedSetLimit += deleteWall;
+        //baseComponent.onPassedSetLimit += deleteWall;
         baseComponent.maxDistance = maxTravelDistanceWalls;
         spawnedWalls.Add(spawnedWall);
     }
@@ -88,7 +88,7 @@ public class WallSpawner : MonoBehaviour
     void onSuccesfullWallClear(GameObject clearedWall)
     {
         OnSuccesfullHit?.Invoke();
-        CompletedATutorialHandle();
+        if(state == States.TUTORIAL) CompletedATutorialHandle();
         deleteWall(clearedWall);
     }
 

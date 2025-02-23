@@ -16,7 +16,7 @@ public class WallConditions : MonoBehaviour
 
     public event Action<GameObject> OnWallPassed;
     public event Action<GameObject> onWallFailed;
-    private readonly Dictionary<CollisionZone, bool> _conditions = new()
+    private Dictionary<CollisionZone, bool> _conditions = new()
     {
         { CollisionZone.MainCamera, false },
         { CollisionZone.LeftHand, false },
@@ -47,14 +47,11 @@ public class WallConditions : MonoBehaviour
     }
 
     private void CheckConditions()
-    {
+    {   
+
         if (_conditions.All(c => c.Value))
         {
             OnWallPassed.Invoke(gameObject);
-        }
-        else if (gameObject.transform.position.y + 10 < playerPos.position.y)
-        {
-            onWallFailed.Invoke(gameObject);
         }
     }
 
@@ -66,6 +63,11 @@ public class WallConditions : MonoBehaviour
 
     public void Update()
     {
+        if (gameObject.transform.position.z + 2 < playerPos.position.z)
+        {
+             Debug.Log(gameObject.transform.position.z  + " " + playerPos.position.z);
+            onWallFailed.Invoke(gameObject);
+        }
         if (Input.GetKeyDown(KeyCode.P))
         {
             OnWallPassed.Invoke(gameObject);
