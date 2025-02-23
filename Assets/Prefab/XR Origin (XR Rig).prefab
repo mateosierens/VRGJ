@@ -205,7 +205,6 @@ GameObject:
   - component: {fileID: 9155122003395625517}
   - component: {fileID: 9155122003395625516}
   - component: {fileID: 9155122003395625515}
-  - component: {fileID: 1719517785472250880}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: LeftHand
@@ -852,19 +851,6 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
---- !u!114 &1719517785472250880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9155122003395625513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3d98f7cb57ca9840be76f42c8d41298, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _lineRenderer: {fileID: 9155122003395625516}
 --- !u!1 &9155122003398917412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,7 +1075,6 @@ GameObject:
   - component: {fileID: 9155122004005405181}
   - component: {fileID: 9155122004005405180}
   - component: {fileID: 9155122004005405179}
-  - component: {fileID: 6004541371402240747}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: RightHand
@@ -1736,19 +1721,6 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
---- !u!114 &6004541371402240747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9155122004005405177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3d98f7cb57ca9840be76f42c8d41298, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _lineRenderer: {fileID: 9155122004005405180}
 --- !u!1001 &2119558851961584812
 PrefabInstance:
   m_ObjectHideFlags: 0
