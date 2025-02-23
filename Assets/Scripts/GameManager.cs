@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
     {
         wallSpawner.playerPos = player.transform;
         wallSpawner.startSpawning();
+        SoundManager.Instance.playBackgroundSound();
     }
     
     public void IncreaseScore()
