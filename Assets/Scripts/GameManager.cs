@@ -52,7 +52,9 @@ public class GameManager : MonoBehaviour
 
     public void onFailedWall()
     {
+        score -= 1;
         SoundManager.Instance.playSound(failedSound);
+        ScoreUpdate.Invoke(score);
     }
     
     public void DifficultyCalculator()
