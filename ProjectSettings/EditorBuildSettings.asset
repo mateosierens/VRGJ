@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/WallSpawnerTest.unity
     guid: 498605c7abdeb484f87afd3d74f207c8
+  - enabled: 1
+    path: Assets/Scenes/Dungeon Scene.unity
+    guid: a385b3b4ab7554a86a615dae7e260e6a
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 63682363f8a8afd43879e4c50e788795
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d78c80e9e4b532c458f0bf8a92bee55a, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: eafd7d57061c1754a8564b7e2c2885fa, type: 2}

@@ -112,9 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   materials:
-  - {fileID: 2100000, guid: b4c3e2978c17b1f479b154c57e7e40db, type: 2}
-  - {fileID: 2100000, guid: f761dd980ecfaa541ba99476eb17bc17, type: 2}
-  - {fileID: 2100000, guid: 8dabc34c670513647b870ca10fe08ec8, type: 2}
+  - {fileID: 2100000, guid: b218ad191990415479b57bf48776f2e4, type: 2}
   assignedController: 0
 --- !u!54 &1542132782297573715
 Rigidbody:

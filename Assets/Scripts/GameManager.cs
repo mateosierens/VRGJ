@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class GameManager : MonoBehaviour
     private bool cheatMode = false;
     public GameObject player;
     public UnityEvent<int> ScoreUpdate;
+    private int successCounter = 0;
+    private int failCounter = 0;
+    public float cooldownReducionAmount = 1f;
+    public int rampUpTreshHold = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +52,7 @@ public class GameManager : MonoBehaviour
         score += 1;
         SoundManager.Instance.playSound(successSound);
         ScoreUpdate.Invoke(score);
-        DifficultyCalculator();
+        DifficultyCalculator(true);
     }
 
     public void onFailedWall()
@@ -55,10 +60,22 @@ public class GameManager : MonoBehaviour
         score -= 1;
         SoundManager.Instance.playSound(failedSound);
         ScoreUpdate.Invoke(score);
+        DifficultyCalculator(false);
     }
     
-    public void DifficultyCalculator()
+    public void DifficultyCalculator(bool success)
     {
+        if (success)
+        {
+            successCounter++;
+            if ((successCounter % rampUpTreshHold == 0) && wallSpawner.spawnCooldown > 1f) wallSpawner.spawnCooldown -= cooldownReducionAmount;
+            
+        }
+        else
+        {
+            failCounter += 1;
+            if (failCounter == 3) SceneManager.LoadScene("GameOver");
+        }
         
     }
 }
