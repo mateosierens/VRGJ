@@ -11,15 +11,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Sien1.unity
     guid: 233201a128f0c744ca0476ff53e6a1f7
-  - enabled: 1
-    path: Assets/Scenes/Main VR Scene.unity
-    guid: 715094974def0aa4982b93f91fd0e957
   - enabled: 0
     path: Assets/Scenes/TimScene.unity
     guid: 3a17659a39bd60d489ed9d00bad61a72
   - enabled: 0
     path: Assets/Scenes/WallSpawnerTest.unity
     guid: 498605c7abdeb484f87afd3d74f207c8
+  - enabled: 1
+    path: Assets/Scenes/Level Select.unity
+    guid: 89be03e6341a8e94393236ad1b757b9d
+  - enabled: 1
+    path: Assets/Scenes/Main VR Scene.unity
+    guid: 715094974def0aa4982b93f91fd0e957
   - enabled: 1
     path: Assets/Scenes/Dungeon Scene.unity
     guid: a385b3b4ab7554a86a615dae7e260e6a
