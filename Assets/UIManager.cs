@@ -7,11 +7,13 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public TMP_Text scoreField;
+    public TMP_Text livesField;
     
     // Start is called before the first frame update
     void Start()
     {
         scoreField.text = "Score: 0";
+        livesField.text = "Lives remaining: 3";
     }
 
     // Update is called once per frame
@@ -23,6 +25,12 @@ public class UIManager : MonoBehaviour
     public void OnScoreUpdate(int score)
     {
         scoreField.text = "Score: " + score.ToString();
+    }
+
+    public void OnLivesUpdate(int lives)
+    {
+        
+        livesField.text = "Lives remaining: " + lives.ToString();
     }
     
 }
