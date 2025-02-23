@@ -1935,6 +1935,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+  cooldownReducionAmount: 1
+  rampUpTreshHold: 3
 --- !u!4 &257274615
 Transform:
   m_ObjectHideFlags: 0
@@ -2316,7 +2318,6 @@ Transform:
   - {fileID: 715423265}
   - {fileID: 1900711036}
   - {fileID: 1819880057}
-  - {fileID: 1903595636}
   - {fileID: 523796908}
   - {fileID: 264392074}
   - {fileID: 686210692}
@@ -2335,9 +2336,10 @@ Transform:
   - {fileID: 1583632478}
   - {fileID: 1791657038}
   - {fileID: 797764369}
-  - {fileID: 806644311}
   - {fileID: 457962300}
+  - {fileID: 806644311}
   - {fileID: 66989480}
+  - {fileID: 1903595636}
   - {fileID: 208592319}
   - {fileID: 1163350369}
   - {fileID: 867529489}
@@ -11899,7 +11901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
       propertyPath: wallPrefabs.Array.size
-      value: 8
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
       propertyPath: wallPrefabs.Array.data[0]
@@ -11934,9 +11936,49 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6883330794744963046, guid: 761b85c0669884d91a9d8e2e6c608775, type: 3}
     - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
+      propertyPath: wallPrefabs.Array.data[8]
+      value: 
+      objectReference: {fileID: 7467927820645436143, guid: 3b59e2586dd89496897bee73566dd0f1, type: 3}
+    - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
+      propertyPath: wallPrefabs.Array.data[9]
+      value: 
+      objectReference: {fileID: 6530012516566469601, guid: d4b9697d6f57f4b1b9efcae88b6165b2, type: 3}
+    - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
       propertyPath: TutorialPrefabs.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
+      propertyPath: wallPrefabs.Array.data[10]
+      value: 
+      objectReference: {fileID: 1678029119398060566, guid: f9772ca3098d54831b0b987b51922155, type: 3}
+    - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
+      propertyPath: wallPrefabs.Array.data[11]
+      value: 
+      objectReference: {fileID: 6603507049691801668, guid: c96b3428bc37344b689736e4ba68af9b, type: 3}
+    - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
+      propertyPath: wallPrefabs.Array.data[12]
+      value: 
+      objectReference: {fileID: 8361635125496822247, guid: 36c3cccc601d843ea802d53ebbc3c04e, type: 3}
+    - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
+      propertyPath: wallPrefabs.Array.data[13]
+      value: 
+      objectReference: {fileID: 5929465478022520036, guid: e008519baf022409eb64ec624671901b, type: 3}
+    - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
+      propertyPath: wallPrefabs.Array.data[14]
+      value: 
+      objectReference: {fileID: 8736661144388077190, guid: ab2132a03f22b43bc8c76e9a01a3ab15, type: 3}
+    - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
+      propertyPath: wallPrefabs.Array.data[15]
+      value: 
+      objectReference: {fileID: 7916972616905528210, guid: 347eef2a951834b63897421b3f504700, type: 3}
+    - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
+      propertyPath: wallPrefabs.Array.data[16]
+      value: 
+      objectReference: {fileID: 2649211159207497706, guid: 6aa823f2b0c634b968138bd4c2bf6745, type: 3}
+    - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
+      propertyPath: wallPrefabs.Array.data[17]
+      value: 
+      objectReference: {fileID: 856667781018490579, guid: 23545321b68bc49849db939efca8c1de, type: 3}
     - target: {fileID: -4489974772596685684, guid: 7421bf993d3e3244690eacbba01a440e, type: 3}
       propertyPath: TutorialPrefabs.Array.data[0]
       value: 
