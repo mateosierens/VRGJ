@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreField.text = "";
+        scoreField.text = "Score: 0";
     }
 
     // Update is called once per frame
