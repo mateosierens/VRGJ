@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/WallSpawnerTest.unity
     guid: 498605c7abdeb484f87afd3d74f207c8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Dungeon Scene.unity
     guid: a385b3b4ab7554a86a615dae7e260e6a
   - enabled: 1
