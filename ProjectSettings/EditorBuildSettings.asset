@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PiepScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Sien1.unity
     guid: 233201a128f0c744ca0476ff53e6a1f7
   - enabled: 0
@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TimScene.unity
     guid: 3a17659a39bd60d489ed9d00bad61a72
+  - enabled: 1
+    path: Assets/Scenes/WallSpawnerTest.unity
+    guid: 498605c7abdeb484f87afd3d74f207c8
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d78c80e9e4b532c458f0bf8a92bee55a, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: eafd7d57061c1754a8564b7e2c2885fa, type: 2}

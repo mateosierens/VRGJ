@@ -7,20 +7,20 @@ public class MovingWall : MonoBehaviour
     public float speed = 2f;
     public float distance = 10f; // Distance to travel before destroying
 
-    private Vector3 startPosition;
-    private GameObject[] wallPrefabs;
+   // private Vector3 startPosition;
+    //private GameObject[] wallPrefabs;
 
     void Start()
     {
-        startPosition = transform.position;
+        //startPosition = transform.position;
 
         // Load all prefabs from the "Prefabs/Walls" folder and cast them to GameObject[]
-        wallPrefabs = Resources.LoadAll<GameObject>("Prefabs/Walls");
+        //wallPrefabs = Resources.LoadAll<GameObject>("Prefabs/Walls");
 
-        if (wallPrefabs == null || wallPrefabs.Length == 0)
-        {
-            Debug.LogError("No wall prefabs found in Resources/Prefabs/Walls.");
-        }
+        // if (wallPrefabs == null || wallPrefabs.Length == 0)
+        // {
+        //     Debug.LogError("No wall prefabs found in Resources/Prefabs/Walls.");
+        // }
     }
 
     void Update()
@@ -29,14 +29,14 @@ public class MovingWall : MonoBehaviour
         transform.position += -Vector3.forward * speed * Time.deltaTime;
 
         // When the wall has moved the specified distance...
-        if (Vector3.Distance(startPosition, transform.position) >= distance)
+        /*if (Vector3.Distance(startPosition, transform.position) >= distance)
         {
             SpawnNewWall();
             Destroy(gameObject);
-        }
+        }*/
     }
 
-    void SpawnNewWall()
+    /*void SpawnNewWall()
     {
         if (wallPrefabs != null && wallPrefabs.Length > 0)
         {
@@ -50,5 +50,5 @@ public class MovingWall : MonoBehaviour
         {
             Debug.LogError("Cannot spawn new wall because wallPrefabs array is empty.");
         }
-    }
+    }*/
 }

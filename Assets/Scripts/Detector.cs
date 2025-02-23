@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using Inputs;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class Detector : MonoBehaviour
 {
@@ -32,9 +35,24 @@ public class Detector : MonoBehaviour
     private void NextColour()
     {
         succesfullHit?.Invoke(assignedController);
+        
+        switch (assignedController)
+        {
+            case CollisionZone.LeftHand:
+                InputManager.Instance.sendHaptics(SideController.LeftHand, 1f, 0.5f);
+                break;
+            case CollisionZone.RightHand:
+                InputManager.Instance.sendHaptics(SideController.RightHand, 1f, 0.5f);
+                break;
+            case CollisionZone.Head:
+                break;
+        }
+
         if (counter + 1 == materials.Capacity) counter = 0;
         else counter++;
         gameObject.GetComponent<MeshRenderer>().material = materials[counter];
         Debug.Log("Counter:" + counter + ", Capacity" + materials.Capacity);
+        
+        
     }
 }

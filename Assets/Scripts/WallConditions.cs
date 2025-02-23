@@ -1,16 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class WallConditions : MonoBehaviour
 {
     
-    private Detector leftDectector;
-    private Detector rightDectector;
-    private Detector headDectector;
+    [CanBeNull] private Detector leftDectector;
+    [CanBeNull] private Detector rightDectector;
+    [CanBeNull] private Detector headDectector;
 
-    public event Action OnWallPassed;
+    public event Action<GameObject> OnWallPassed;
     private readonly Dictionary<CollisionZone, bool> _conditions = new()
     {
         { CollisionZone.Head, false },
@@ -27,7 +28,7 @@ public class WallConditions : MonoBehaviour
 
     private Detector GetDetector(string name)
     {
-        var detector = transform.Find(name).gameObject.GetComponent<Detector>();
+        Detector detector = transform.Find(name).gameObject.GetComponent<Detector>();
         detector.succesfullHit += OnTargetCollision;
         return detector;
     }
@@ -36,7 +37,7 @@ public class WallConditions : MonoBehaviour
     {
         if (_conditions.All(c => c.Value))
         {
-            OnWallPassed.Invoke();
+            OnWallPassed.Invoke(gameObject);
         }
     }
 
@@ -44,5 +45,13 @@ public class WallConditions : MonoBehaviour
     {
         _conditions[e] = true;
         CheckConditions();
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            OnWallPassed.Invoke(gameObject);
+        }
     }
 }
