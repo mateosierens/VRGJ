@@ -21,6 +21,6 @@ public class ReloadManager : MonoBehaviour
 
     public void reloadCurrentScene()
     {
-        SceneManager.LoadScene( SceneManager.GetActiveScene().name );
+        SceneManager.LoadScene( "Level Select" );
     }
 }
