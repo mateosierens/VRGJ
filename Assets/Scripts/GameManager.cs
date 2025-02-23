@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
     public int score = 0;
     public WallSpawner wallSpawner;
     public AudioClip successSound;
@@ -26,6 +25,7 @@ public class GameManager : MonoBehaviour
     {
         wallSpawner.OnSuccesfullHit += IncreaseScore;
         wallSpawner.OnFailedHit += onFailedWall;
+        ScoreKeeper.Instance.totalScore = 0;
     }
 
     // Update is called once per frame
@@ -77,7 +77,11 @@ public class GameManager : MonoBehaviour
         else
         {
             failCounter += 1;
-            if (failCounter == 3) SceneManager.LoadScene("GameOver");
+            if (failCounter == 3)
+            {
+                ScoreKeeper.Instance.totalScore = score;
+                SceneManager.LoadScene("GameOver");
+            }
         }
         
     }
