@@ -65,7 +65,7 @@ public class WallConditions : MonoBehaviour
     {
         if (gameObject.transform.position.z + 2 < playerPos.position.z)
         {
-             Debug.Log(gameObject.transform.position.z  + " " + playerPos.position.z);
+            Debug.Log(gameObject.transform.position.z  + " " + playerPos.position.z);
             onWallFailed.Invoke(gameObject);
         }
         if (Input.GetKeyDown(KeyCode.P))
