@@ -46,7 +46,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5120207163154954589}
-  m_Mesh: {fileID: -7896312065939463483, guid: 4ea14bdca05b24da1a91e4cc5a94de71, type: 3}
+  m_Mesh: {fileID: 2211489611651800062, guid: 4ea14bdca05b24da1a91e4cc5a94de71, type: 3}
 --- !u!23 &6633341801747798152
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074f16c3bddd3c64792dbf3c05431d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPos: {fileID: 0}
 --- !u!114 &3547731928438948795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6945688053720799403, guid: 7231a950166da724691f081463609c77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.302
+      value: 1.235
       objectReference: {fileID: 0}
     - target: {fileID: 6945688053720799403, guid: 7231a950166da724691f081463609c77, type: 3}
       propertyPath: m_LocalPosition.z
