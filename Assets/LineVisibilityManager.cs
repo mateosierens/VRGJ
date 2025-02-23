@@ -10,7 +10,7 @@ public class LineVisibilityManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _lineRenderer.enabled = false;
+        _lineRenderer.enabled = true;
     }
 
     // Update is called once per frame
