@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         wallSpawner.OnSuccesfullHit += IncreaseScore;
+
     }
 
     // Update is called once per frame
