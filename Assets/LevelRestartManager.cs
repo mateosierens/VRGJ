@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class LevelRestartManager : MonoBehaviour
 {
     public String mainScene;
+    public String subScene;
     
     // Start is called before the first frame update
     void Start()
@@ -23,5 +24,15 @@ public class LevelRestartManager : MonoBehaviour
     public void onRestart()
     {
         SceneManager.LoadScene(mainScene);
+    }
+
+    public void onFirstLevel()
+    {
+        SceneManager.LoadScene(mainScene);
+    }
+    
+    public void onSecondLevel()
+    {
+        SceneManager.LoadScene(subScene);
     }
 }

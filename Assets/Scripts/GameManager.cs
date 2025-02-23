@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,7 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public UnityEvent<int> ScoreUpdate;
     private int successCounter = 0;
-    private int failCounter = 0;
+    public int failCounter = 0;
     public float cooldownReducionAmount = 1f;
     public int rampUpTreshHold = 3;
 
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
     {
         wallSpawner.playerPos = player.transform;
         wallSpawner.startSpawning();
+        SoundManager.Instance.playBackgroundSound();
     }
     
     public void IncreaseScore()
