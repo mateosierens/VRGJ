@@ -39,12 +39,12 @@ public class Detector : MonoBehaviour
         switch (assignedController)
         {
             case CollisionZone.LeftHand:
-                InputManager.Instance.sendHaptics(SideController.LeftHand, 1f, 0.5f);
+                InputManager.Instance.sendHaptics(SideController.LeftHand, 0.3f, 0.5f);
                 break;
             case CollisionZone.RightHand:
-                InputManager.Instance.sendHaptics(SideController.RightHand, 1f, 0.5f);
+                InputManager.Instance.sendHaptics(SideController.RightHand, 0.3f, 0.5f);
                 break;
-            case CollisionZone.Head:
+            case CollisionZone.MainCamera:
                 break;
         }
 

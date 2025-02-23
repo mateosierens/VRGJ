@@ -1,6 +1,6 @@
 public enum CollisionZone
 {
-    Head,
+    MainCamera,
     LeftHand,
     RightHand
 }

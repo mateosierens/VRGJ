@@ -45,4 +45,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallPrefabs:
+  - {fileID: 6883330794744963046, guid: f923b68eac9768341a63a351c1fa9392, type: 3}
   - {fileID: 5120207163154954589, guid: 8de550ef9ed044811bf306f2117549fa, type: 3}
+  - {fileID: 7437154239221944007, guid: bd9583117dead6748a461999a1e10f9d, type: 3}
+  - {fileID: 641292723074541159, guid: 840cae71590faf84b9b72dd7bd75b999, type: 3}
+  - {fileID: 8559512623654717372, guid: eab3d081e64d5844d894d954a99b016a, type: 3}
+  - {fileID: 7786594903366743522, guid: dfe79b7b105b47a45906ad6382e82a95, type: 3}
+  - {fileID: 5120207163154954589, guid: 8de550ef9ed044811bf306f2117549fa, type: 3}
+  - {fileID: 5816225704057914702, guid: af801b2ae9a4f4e4eb38b46a532132ea, type: 3}
+  - {fileID: 5646294571182549762, guid: a7debf70c08599f45b76964a9981fdec, type: 3}
+  - {fileID: 6883330794744963046, guid: 761b85c0669884d91a9d8e2e6c608775, type: 3}
+  started: 0
+  spawnTimer: 60
+  spawnCooldown: 60
+  maxTravelDistanceWalls: 30

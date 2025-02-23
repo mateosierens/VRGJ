@@ -1,20 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
 
     public int score = 0;
     public WallSpawner wallSpawner;
-    public AudioClip tempclip;
+    public AudioClip successSound;
+    public AudioClip failedSound;
     private bool cheatMode = false;
-    
+    public GameObject player;
+    public UnityEvent<int> ScoreUpdate;
+
     // Start is called before the first frame update
     void Start()
     {
         wallSpawner.OnSuccesfullHit += IncreaseScore;
-
+        wallSpawner.OnFailedHit += onFailedWall;
     }
 
     // Update is called once per frame
@@ -32,9 +36,27 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void OnGameStart()
+    {
+        wallSpawner.playerPos = player.transform;
+        wallSpawner.startSpawning();
+    }
+    
     public void IncreaseScore()
     {
         score += 1;
-        SoundManager.Instance.playSound(tempclip);
+        SoundManager.Instance.playSound(successSound);
+        ScoreUpdate.Invoke(score);
+        DifficultyCalculator();
+    }
+
+    public void onFailedWall()
+    {
+        SoundManager.Instance.playSound(failedSound);
+    }
+    
+    public void DifficultyCalculator()
+    {
+        
     }
 }

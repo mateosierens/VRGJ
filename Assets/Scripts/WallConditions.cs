@@ -4,17 +4,21 @@ using System.Linq;
 using JetBrains.Annotations;
 using UnityEngine;
 
+
+
 public class WallConditions : MonoBehaviour
 {
-    
+
     [CanBeNull] private Detector leftDectector;
     [CanBeNull] private Detector rightDectector;
     [CanBeNull] private Detector headDectector;
+    public Transform playerPos;
 
     public event Action<GameObject> OnWallPassed;
+    public event Action<GameObject> onWallFailed;
     private readonly Dictionary<CollisionZone, bool> _conditions = new()
     {
-        { CollisionZone.Head, false },
+        { CollisionZone.MainCamera, false },
         { CollisionZone.LeftHand, false },
         { CollisionZone.RightHand, false }
     };
@@ -24,6 +28,15 @@ public class WallConditions : MonoBehaviour
         leftDectector = GetDetector("CollisionDetectorLeft");
         rightDectector = GetDetector("CollisionDetectorRight");
         headDectector = GetDetector("CollisionDetectorHead");
+        
+        
+        if (!leftDectector.gameObject.activeSelf) _conditions[CollisionZone.LeftHand] = true;
+        if (!rightDectector.gameObject.activeSelf) _conditions[CollisionZone.RightHand] = true;
+        if (!headDectector.gameObject.activeSelf) _conditions[CollisionZone.MainCamera] = true;
+        
+        //Debug.Log(_conditions[CollisionZone.LeftHand] + " " + _conditions[CollisionZone.RightHand] + " " + _conditions[CollisionZone.MainCamera]);
+        
+        if (!headDectector && !rightDectector && !leftDectector) throw new Exception("NO COLLISION BOXES ON WALL " + gameObject.name);
     }
 
     private Detector GetDetector(string name)
@@ -38,6 +51,10 @@ public class WallConditions : MonoBehaviour
         if (_conditions.All(c => c.Value))
         {
             OnWallPassed.Invoke(gameObject);
+        }
+        else if (gameObject.transform.position.y + 10 < playerPos.position.y)
+        {
+            onWallFailed.Invoke(gameObject);
         }
     }
 
