@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,9 +15,8 @@ public class GameManager : MonoBehaviour
     private bool cheatMode = false;
     public GameObject player;
     public UnityEvent<int> ScoreUpdate;
-    public UnityEvent<int> LivesUpdate;
     private int successCounter = 0;
-    private int failCounter = 0;
+    public int failCounter = 0;
     public float cooldownReducionAmount = 1f;
     public int rampUpTreshHold = 3;
 
@@ -63,8 +63,6 @@ public class GameManager : MonoBehaviour
         SoundManager.Instance.playSound(failedSound);
         ScoreUpdate.Invoke(score);
         DifficultyCalculator(false);
-        int calcFailcounter = 3 - failCounter;
-        LivesUpdate.Invoke(calcFailcounter);
     }
     
     public void DifficultyCalculator(bool success)
